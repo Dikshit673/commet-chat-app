@@ -61,7 +61,7 @@ const Footer = () => {
           <hr />
 
           <div className='flex items-center justify-between gap-4 pt-4'>
-            <div className='flex items-center gap-6'>
+            <div className='*:hover:text-prime-500 flex items-center gap-6'>
               <p>2023 &copy; CometChat</p>
               <p>Terms of Use</p>
               <p>Privacy Policy</p>
