@@ -9,7 +9,7 @@ const Navbar = () => {
           <div className='flex items-center justify-between gap-4'>
             <Heading as='h5' title='cometChat' headingColor={'white'} />
             <nav className='hidden md:block'>
-              <ul className='flex items-center gap-4 text-sm font-medium capitalize'>
+              <ul className='*:hover:text-prime-500 flex items-center gap-4 text-sm font-medium capitalize'>
                 <li>plateform</li>
                 <li>solutions</li>
                 <li>developers</li>
