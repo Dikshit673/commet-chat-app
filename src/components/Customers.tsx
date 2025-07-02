@@ -3,36 +3,22 @@ import { CustomersData } from './data/Customers';
 const Customers = () => {
   return (
     <section className='bg-prime-800 py-8'>
-      <div className='overflow-x-hidden'>
-        <div className='animate-loop flex items-center'>
-          <div className='flex shrink-0 items-center'>
-            {CustomersData.map((item) => {
-              const { id, icon, title } = item;
-              return (
-                <figure key={id} className='h-8 shrink-0 pe-8'>
-                  <img
-                    src={icon}
-                    alt={title}
-                    className='h-full object-contain'
-                  />
-                </figure>
-              );
-            })}
-          </div>
-          <div className='flex shrink-0 items-center'>
-            {CustomersData.map((item) => {
-              const { id, icon, title } = item;
-              return (
-                <figure key={id} className='h-8 shrink-0 pe-8'>
-                  <img
-                    src={icon}
-                    alt={title}
-                    className='h-full object-contain'
-                  />
-                </figure>
-              );
-            })}
-          </div>
+      <div className='bg-prime-800/60 overflow-hidden rounded-lg py-6 backdrop-blur-md'>
+        <div
+          className='animate-loop flex min-w-max'
+          style={{ '--loop-duration': '60s' } as React.CSSProperties}
+        >
+          {[...CustomersData, ...CustomersData].map((item, idx) => {
+            const { id, icon, title } = item;
+            return (
+              <img
+                key={`${id}-${idx}`}
+                src={icon}
+                alt={title}
+                className='inline-block h-10 px-10'
+              />
+            );
+          })}
         </div>
       </div>
     </section>
