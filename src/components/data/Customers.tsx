@@ -13,7 +13,7 @@ export const CustomersData = [
   {
     id: 1,
     icon: Startup500,
-    title: 'AWS',
+    title: '500-startup',
   },
   {
     id: 2,
@@ -23,42 +23,42 @@ export const CustomersData = [
   {
     id: 3,
     icon: Genomic10x,
-    title: 'AWS',
+    title: '10x-genomics',
   },
   {
     id: 4,
     icon: Microsoft,
-    title: 'AWS',
+    title: 'microsoft',
   },
   {
     id: 5,
     icon: Nasscom,
-    title: 'AWS',
+    title: 'nasscom',
   },
   {
     id: 6,
     icon: TechStar,
-    title: 'AWS',
+    title: 'tech-star',
   },
 
   {
     id: 7,
     icon: TeknoPoint,
-    title: 'AWS',
+    title: 'tekno-point',
   },
   {
     id: 8,
     icon: Cisco,
-    title: 'AWS',
+    title: 'cisco',
   },
   {
     id: 9,
     icon: Trinax,
-    title: 'AWS',
+    title: 'trinax',
   },
   {
     id: 10,
     icon: HakunaMatata,
-    title: 'AWS',
+    title: 'hakuna-matata',
   },
 ];
