@@ -15,7 +15,7 @@
   --text-6xl: 48px;
   --text-6xl--line-height: 1;
 
-  --animate-loop: loop 15s infinite linear forwards;
+  --animate-loop: loop var(--loop-duration, 30s) infinite linear;
 }
 
 * {
@@ -27,6 +27,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
